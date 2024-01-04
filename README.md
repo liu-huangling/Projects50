@@ -1,2 +1,4 @@
 # Projects50
-50 Projects In 50 Days
+--------------
+
+Day1 - Expanding Cards : https://codepen.io/liu_0821/pen/wvOMeLJ?editors=1010
