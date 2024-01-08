@@ -9,3 +9,5 @@ Day2 - Progress Steps
 Day3 - Rotating Navigation
 
 Day4 - Hidden Search Widget
+
+Day5 - Blurry Loading
