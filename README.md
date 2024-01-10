@@ -13,3 +13,5 @@ Day4 - Hidden Search Widget
 Day5 - Blurry Loading
 
 Day6 - Scroll Animation
+
+Day7 - Split Landing Page
