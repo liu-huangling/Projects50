@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, span {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  background-color: #22254b;
+  color: #fff;
+  cursor: default;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+}
+body main header {
+  background-color: #373b69;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body main header input {
+  height: 2rem;
+  border-radius: 0.75rem;
+  border: none;
+  padding-left: 0.5rem;
+  margin-right: 0.75rem;
+}
+body main header input:focus {
+  outline: none;
+  background-color: #22254b;
+  color: #fff;
+}
+body main header input:focus::placeholder {
+  color: #fff;
+}
+body main section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+body main section .movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: #373b69;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+body main section .movie:hover .overflow {
+  transform: translateY(0%);
+  opacity: 0.9;
+}
+body main section .movie img {
+  width: 100%;
+}
+body main section .movie .movie-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+body main section .movie .movie-info h2 {
+  padding-bottom: 0.75rem;
+}
+body main section .movie .movie-info span {
+  background-color: #22254b;
+  padding: 0.5rem 0.75rem;
+  font-weight: 700;
+}
+body main section .movie .movie-info span.green {
+  color: green;
+}
+body main section .movie .movie-info span.yellow {
+  color: #ffbf00;
+}
+body main section .movie .movie-info span.red {
+  color: #c10000;
+}
+body main section .movie .overflow {
+  background-color: #fff;
+  padding: 2rem;
+  font-weight: 600;
+  color: #22254b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
