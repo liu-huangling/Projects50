@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./clock.css">
+</head>
+<body>
+    <main id="main">
+        <button id="cutover">
+            <i class="fa-regular fa-sun"></i>
+        </button>
+        <div class="clock">
+            <div class="lines hours" id="hours"></div>
+            <div class="lines min" id="min"></div>
+            <div class="lines sec" id="sec"></div>
+            <div class="point"></div>
+        </div>
+        <div class="textGroup">
+            <h3 id="times">12:00</h3>
+        </div>
+    </main>
+    <script src="./clock.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Heebo", sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+body main {
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.6s ease-in-out;
+}
+body main button {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0.75rem 0;
+}
+body main .clock {
+  width: 250px;
+  height: 250px;
+  position: relative;
+}
+body main .clock .lines {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: bottom center;
+  background-color: #000000;
+}
+body main .clock .hours {
+  width: 5px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-35%, -50%) rotate(0deg);
+  height: 75px;
+}
+body main .clock .min {
+  width: 3px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-25%, -50%) rotate(0deg);
+  height: 120px;
+}
+body main .clock .sec {
+  width: 2px;
+  top: 25%;
+  left: 50%;
+  transform: translate(-25%, -50%) rotate(0deg);
+  height: 120px;
+  background-color: #c71111;
+}
+body main .clock .point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #c71111;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main .clock .point:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main .textGroup {
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+body main .textGroup h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 44px;
+}
+body main .textGroup p {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main.dark {
+  background-color: #101010;
+}
+body main.dark button {
+  background-color: #fff0;
+  color: #fff;
+}
+body main.dark .clock .hours {
+  background-color: #fff;
+}
+body main.dark .clock .min {
+  background-color: #fff;
+}
+body main.dark .clock .sec {
+  background-color: #c71111;
+}
+body main.dark .textGroup {
+  color: #fff;
+}
