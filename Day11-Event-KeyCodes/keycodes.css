@@ -27,7 +27,7 @@ body main h2 {
   padding: 0.2rem;
   font-weight: 700;
   cursor: default;
-  box-shadow: 1px 3px 5px #00000057;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3411764706);
 }
 body main h2 small {
   font-size: 0.75rem;
@@ -46,7 +46,7 @@ body main .codes .code {
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 1px 3px 5px #00000057;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3411764706);
   cursor: default;
 }
 body main .codes .code small {
@@ -56,4 +56,4 @@ body main .codes .code small {
 }
 body main .codes.hidden {
   display: none;
-}
+}/*# sourceMappingURL=keycodes.css.map */

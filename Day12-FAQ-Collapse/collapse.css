@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 * {
@@ -27,7 +26,7 @@ body main h2 {
 body main .collapseGroup .collapse {
   width: 400px;
   margin: 1.5rem 0;
-  box-shadow: 0 0 5px #02020294;
+  box-shadow: 0 0 5px rgba(2, 2, 2, 0.5803921569);
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
@@ -64,7 +63,7 @@ body main .collapseGroup .collapse.active {
   background: #fff;
 }
 body main .collapseGroup .collapse.active:before, body main .collapseGroup .collapse.active:after {
-  content: "";
+  content: "\f075";
   font-family: "Font Awesome 5 Free";
   position: absolute;
   font-size: 7rem;
@@ -92,4 +91,4 @@ body main .collapseGroup .collapse.active button i.fa-chevron-up {
 }
 body main .collapseGroup .collapse.active button i.fa-chevron-down {
   display: none;
-}
+}/*# sourceMappingURL=collapse.css.map */

@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+*{
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+  font-family: 'Muli';
+  main{
+    position: relative;
+    min-height: 100vh;
+    .circleGroup{
+      position: fixed;
+      top: -100px;
+      left: -100px;
+      z-index: 10;
+      .circle{
+        background-color: #ff7979;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: relative;
+        button{
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          left: 60%;
+          height: 100px;
+          background: transparent;
+          border: 0;
+          font-size: 26px;
+          color: #fff;
+          transition: transform 0.5s linear;
+        }
+        button#bars{
+          transform: rotate(0deg);
+          transform-origin: top left;
+        }
+        button#close{
+          transform: rotate(90deg);
+          transform-origin: top left;
+        }
+      }
+    }
+    section{
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 4rem;
+      transform-origin: top left;
+      background-color: #fff;
+      transition: 0.4s linear;
+      z-index: 5;
+      height: 100%;
+      overflow: auto;
+      h1{
+        font-size: 3rem;
+        font-weight: 900;
+      }
+      h6{
+        font-style: italic;
+        color: #555;
+      }
+      img{
+        max-width:100% ;
+      }
+      p{
+         letter-spacing: .5px;
+      }
+    }
+    ul{
+      position: fixed;
+      bottom: 1rem;
+      list-style:none;
+      color: #fff;
+      li{
+        margin: 1rem;
+        cursor: pointer;
+        font-weight: 700;
+        &:hover{
+          transform: translateX(15%);
+        }
+        i{
+          font-size:1rem;
+          padding-right: .5rem;
+        }
+      }
+    }
+    
+    section.show-nav{
+      transform: rotate(-20deg);
+    }
+    .circleGroup.show-nav{
+      .circle{
+        button#bars{
+          transform: rotate(-90deg);
+          transform-origin: top left;
+        }
+        button#close{
+          transform: rotate(0deg);
+          transform-origin: top left;
+        }
+      }
+    }
+  }
+}

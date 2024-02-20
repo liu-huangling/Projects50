@@ -1,73 +1,76 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Concert One';
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+* {
+  box-sizing: border-box;
 }
 
-main{
-    display: flex;
-    width: 90vw;
+.panels-1 {
+  background-image: url("https://images.unsplash.com/photo-1617562528589-2bec8963a8e9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
-.panels{
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;    
-    border-radius: 50px;
-    cursor: pointer;
-    flex: 0.5;
-    margin: 10px;
-    position: relative;
-    transition: flex 0.7s ease-in;
-}
-.panels.active{
-    flex: 5;
+.panels-2 {
+  background-image: url("https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
-.panels-1{
-    background-image: url('https://images.unsplash.com/photo-1617562528589-2bec8963a8e9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-.panels-2{
-    background-image: url('https://images.unsplash.com/photo-1526779259212-939e64788e3c?q=80&w=1474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-.panels-3{
-    background-image: url('https://images.unsplash.com/photo-1561816544-21ecbffa09a3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-.panels-4{
-    background-image: url('https://images.unsplash.com/photo-1617562528589-2bec8963a8e9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-}
-.panels-5{
-    background-image: url('https://images.unsplash.com/photo-1619328359755-0428244824c4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+.panels-3 {
+  background-image: url("https://images.unsplash.com/photo-1561816544-21ecbffa09a3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
-.panels h3{
-    opacity: 0;
-    color: #fff;
-    font-weight: 500;
-    text-shadow: 0 0 2px #000;
-    position: absolute;
-    bottom: 0;
-    left: 1rem;
-    font-size: 24px;
-}
-.panels.active h3{
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
+.panels-4 {
+  background-image: url("https://images.unsplash.com/photo-1617562528589-2bec8963a8e9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
-@media (max-width:480px) {
-    main{
-        width: 100vw;
-    }
-    .panels:nth-of-type(4), .panels:nth-of-type(5) {
-        display: none;
-    }
+.panels-5 {
+  background-image: url("https://images.unsplash.com/photo-1619328359755-0428244824c4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
+
+body {
+  font-family: "Concert One";
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+body main {
+  display: flex;
+  width: 90vw;
+}
+body main .panels {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+body main .panels h3 {
+  opacity: 0;
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 0 0 2px #000;
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  font-size: 24px;
+}
+body main .panels.active {
+  flex: 5;
+}
+body main .panels.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  main {
+    width: 100vw;
+  }
+  .panels:nth-of-type(4), .panels:nth-of-type(5) {
+    display: none;
+  }
+}/*# sourceMappingURL=panels.css.map */

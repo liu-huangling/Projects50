@@ -24,7 +24,7 @@ body main .card {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 2px 2px 2px #0000003b;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.231372549);
   margin: 1rem;
   border-radius: 15px;
   background-color: #3e7bd1;
@@ -41,4 +41,4 @@ body main .card h3 {
 }
 body main .card.show {
   transform: translateX(0%);
-}
+}/*# sourceMappingURL=scroll.css.map */

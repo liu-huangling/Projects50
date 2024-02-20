@@ -2,10 +2,7 @@
 * {
   box-sizing: border-box;
 }
-:root{
-    --empty: #383838;
-    --fill: #3498bd;
-}
+
 body {
   padding: 0;
   margin: 0;
@@ -15,7 +12,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e1e3e9;
 }
 body main {
   display: flex;
@@ -35,7 +31,7 @@ body main .progressGroup:before {
   position: absolute;
   height: 3px;
   width: 100%;
-  background-color: var(--empty);
+  background-color: #383838;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -45,7 +41,7 @@ body main .progressGroup .progress-dush {
   position: absolute;
   height: 3px;
   width: 0;
-  background-color:  var(--fill);
+  background-color: #3498bd;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -59,11 +55,11 @@ body main .progressGroup .circles {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid  var(--empty);
+  border: 3px solid #383838;
   border-radius: 50%;
 }
 body main .progressGroup .circles.active {
-  border: 3px solid  var(--fill);
+  border: 3px solid #3498bd;
   transition: 0.4s ease 0.2s;
 }
 body main .btnGroup {
@@ -78,7 +74,7 @@ body main .btnGroup .btn {
   height: 40px;
   border-radius: 10px;
   padding: 4px;
-  background-color:  var(--fill);
+  background-color: #3498bd;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
@@ -93,6 +89,6 @@ body main .btnGroup .btn:fouce {
   outline: 0;
 }
 body main .btnGroup .btn.disabled {
-  background-color:  var(--empty);
+  background-color: #383838;
   cursor: not-allowed;
-}
+}/*# sourceMappingURL=progress.css.map */

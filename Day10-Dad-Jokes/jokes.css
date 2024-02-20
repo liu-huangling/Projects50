@@ -19,7 +19,7 @@ body section {
   width: 450px;
   min-height: 220px;
   padding: 1rem 0;
-  box-shadow: 0 0 5px #02020247;
+  box-shadow: 0 0 5px rgba(2, 2, 2, 0.2784313725);
   background-color: #fff;
   border-radius: 2rem;
   display: flex;
@@ -56,4 +56,4 @@ body section button:active {
 }
 body section button:hover {
   background-color: #ca73e7;
-}
+}/*# sourceMappingURL=jokes.css.map */

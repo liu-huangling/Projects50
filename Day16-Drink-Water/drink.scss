@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+$BGColor: #3494e4;
+$borderColor: #144fc6;
+$fillColor: #6ab3f8;
+
+@mixin flexGroup($fd,$jcc, $acc) {
+  display: flex;
+  flex-direction: $fd;
+  justify-content: $jcc;
+  align-items: $acc;
+  align-content: $acc;
+}
+* {
+    box-sizing: border-box;
+}
+h1,h3,p,span{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat',sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $BGColor;
+  color: #fff;
+  @include flexGroup(column,null,center);
+  
+  main{
+    margin-top: 1.5rem;
+    @include flexGroup(column,null,center);
+    cursor: default;
+    .cup{
+      @include flexGroup(column,null,center);
+      margin-top: 1rem;
+      .big-cup{
+        @include flexGroup(column,null,null);
+        width: 150px;
+        border: 2px solid $borderColor;
+        border-radius: 0 0 40px 40px;
+        overflow: hidden;
+        height: 300px;
+        margin-bottom: 1rem;
+        transition: .6s ease;
+        .totalText{
+          height: 100%;
+          background-color: #fff;
+          color: $BGColor;
+          @include flexGroup(row,center,center);
+          font-weight: 700;
+        }
+        .currentText{
+          height: 0%;
+          background-color: $fillColor;
+          color: #fff;
+          @include flexGroup(row,center,center);
+          font-weight: 700;
+        }
+      }
+      p{
+        @include flexGroup(column,null,center);
+        font-weight: 700;
+        margin-bottom: 2rem;
+        small{
+          font-size: 14px;
+        }
+      }
+    }
+    
+    .cups{
+      @include flexGroup(row,null,center);
+      flex-wrap: wrap;
+      width: 280px;
+      
+      .small-cup{
+        width: 50px;
+        border: 2px solid $borderColor;
+        border-radius: 0 0 15px 15px;
+        overflow: hidden;
+        height: 95px;
+        margin: .5rem;
+        @include flexGroup(row,center,center);
+        cursor: pointer;
+        transition : .6s ease;
+        span{
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+      .small-cup.fill{
+        background-color: $fillColor;
+      }
+    }
+  }
+}

@@ -42,6 +42,9 @@ body main header input:focus {
   background-color: #22254b;
   color: #fff;
 }
+body main header input:focus::-moz-placeholder {
+  color: #fff;
+}
 body main header input:focus::placeholder {
   color: #fff;
 }
@@ -104,4 +107,4 @@ body main section .movie .overflow {
   max-height: 100%;
   transform: translateY(101%);
   transition: transform 0.3s ease-in;
-}
+}/*# sourceMappingURL=movie.css.map */
