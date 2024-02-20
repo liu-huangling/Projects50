@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./paint.css">
+</head>
+<body>
+    <main id="app">
+        <div class="paintBox">
+          <canvas 
+                  ref="canvas"
+                  id="canvas"
+                  @mousedown="Mousedown($event)"
+                  @mousemove="Mousemove($event)"
+                  @mouseup="drawFinish()"
+          ></canvas>
+        </div>
+        <section>
+          <div class="tools dash" @click="editPaint('dash')">
+            <i class="fa-solid fa-minus"></i>
+          </div>
+          <div class="tools number">
+            {{paint}}
+          </div>
+          <div class="tools plus" @click="editPaint('plus')">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="tools color">
+            <input type="color" id="color" @change="editColor($event)">
+          </div>
+          <div class="tools trash" @click="clearBoard()" >
+            <i class="fa-solid fa-trash"></i>
+          </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.37/vue.global.prod.min.js"></script>
+    <script src="./paint.js"></script>
+</body>
+</html>
