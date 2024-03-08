@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins";
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2a2a72;
+  overflow: hidden;
+}
+body form {
+  width: 100%;
+  max-width: 650px;
+  margin: 0.75rem 0;
+}
+body form #search {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 18px;
+  border: none;
+  border-radius: 0.375rem;
+  color: #fff;
+  background-color: #4c2885;
+}
+body form #search:focus {
+  outline: none;
+}
+body form #search::-moz-placeholder {
+  color: #bbb;
+}
+body form #search::placeholder {
+  color: #bbb;
+}
+body main {
+  width: 100%;
+  max-width: 650px;
+}
+body main section.card {
+  max-width: 650px;
+  min-height: 250px;
+  border-radius: 0.75rem;
+  background-color: #4c2885;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+body main section.card .card-head-sticker {
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
+  overflow: hidden;
+  outline: 8px solid #2a2a72;
+  margin: 1rem;
+}
+body main section.card .card-head-sticker img {
+  max-width: 100%;
+  max-height: 100%;
+}
+body main section.card .card-text-content {
+  width: 450px;
+  padding: 0.75rem;
+}
+body main section.card .card-text-content h2 {
+  padding-bottom: 0.5rem;
+}
+body main section.card .card-text-content p {
+  padding-bottom: 0.5rem;
+  word-break: break-all;
+}
+body main section.card .card-text-content .text-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+body main section.card .card-text-content .text-detail span strang {
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+body main section.card .card-text-content .project-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main section.card .card-text-content .project-title .links {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  background-color: #2a2a72;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  main .card {
+    flex-direction: column !important;
+  }
+  main .card .card-head-sticker {
+    margin: 2rem !important;
+  }
+  main .card .card-text-content {
+    padding-top: 0 !important;
+  }
+}/*# sourceMappingURL=github.css.map */
