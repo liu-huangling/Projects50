@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: 'Muli', sans-serif;
+  background-color: #3b3b98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  cursor: default;
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #23235b;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    width: 350px;
+    max-width: 100%;
+    color:#fff;
+    h1{
+      font-size: 2rem;
+      text-align: center;
+      margin: 10px 0 20px 0;
+    }
+    .psdBox{
+      background-color: #151537;
+      width: 100%;
+      height: 46px;
+      margin: 0 .5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      #psd{
+        padding: .5rem;
+        font-size: 1.5rem;
+      }
+      #copy{
+        width: 36px;
+        padding: .5rem;
+        background-color: #3b3b98;
+        border: none;
+        outline:none;
+        color:#fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+        position: absolute;
+        right: .5rem;
+      }
+    }
+    .chooseBox{
+      width: 100%;
+      .setting{
+        margin: 1.75rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        label{
+          font-size: 1.1rem;
+        }
+        input[type="number"]{
+          width: 40px;
+          &:focus{
+            outline:none;
+          }
+        }
+      }
+    }
+    #createPsd{
+      background-color: #3b3b98;
+      color:#fff;
+      border: none;
+      padding: .5rem;
+      width: 100%;
+      font-size: 1.2rem;
+      cursor: pointer;
+      &:hover{
+        opacity: .9;
+      }
+      &:active{
+        opacity: .9;
+        transform: scale(.95);
+      }
+    }
+  }
+}
