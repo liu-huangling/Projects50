@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #7bdaf3;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: 3rem;
+  width: 100vw;
+}
+body #addNote {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: #9ec862;
+  border: none;
+  padding: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.3019607843);
+}
+body #addNote:focus {
+  outline: none;
+}
+body #addNote:active {
+  opacity: 0.95;
+  transform: scale(0.98);
+}
+body #addNote i {
+  margin-right: 0.25rem;
+}
+body .note {
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 30px 20px;
+  width: 400px;
+}
+body .note .setting {
+  width: 100%;
+  height: 40px;
+  background-color: #9ec862;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body .note .setting i {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #fff;
+}
+body .note .noteText {
+  font-size: 1.2rem;
+  height: 360px;
+  width: 100%;
+  padding: 20px;
+}
+body .note .textarea {
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-size: 1.2rem;
+  height: 360px;
+  width: 100%;
+  resize: none;
+}
+body .note .hidden {
+  display: none;
+}/*# sourceMappingURL=note.css.map */
