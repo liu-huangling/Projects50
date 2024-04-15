@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans";
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(155, 89, 182, 0.7);
+}
+body #phone {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 3px solid #eee;
+  width: 340px;
+  height: 600px;
+}
+body #phone .img {
+  opacity: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 60px);
+  transition: opacity 0.4s ease;
+}
+body #phone .img.show {
+  opacity: 1;
+}
+body #phone ul {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body #phone ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #777;
+  cursor: pointer;
+}
+body #phone ul li:hover {
+  opacity: 0.9;
+}
+body #phone ul li i {
+  margin-bottom: 0.25rem;
+}
+body #phone ul li p {
+  font-size: 12px;
+}
+body #phone ul li.active {
+  color: rgba(155, 89, 182, 0.7);
+}/*# sourceMappingURL=index.css.map */
